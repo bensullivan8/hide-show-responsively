@@ -40,13 +40,14 @@ img {
 @media only screen and (min-width: 25em) {
 
   .dino:nth-child(2),
-  .dino:nth-child(4){
+  .dino:nth-child(4) {
     display: block;
   }
 
   .dino {
     width: 50%;
   }
+
 }
 
 @media only screen and (min-width: 38em) {

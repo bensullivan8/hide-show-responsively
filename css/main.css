@@ -19,6 +19,7 @@ html {
 
 .dino-wrap {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .dino {
@@ -36,22 +37,38 @@ img {
   display: none;
 }
 
-.dino:nth-child(1),
-.dino:nth-child(3){
-  width: 100%;
-}
-
 @media only screen and (min-width: 25em) {
 
   .dino:nth-child(2),
   .dino:nth-child(4){
     display: block;
-    width: 100%;
+  }
+
+  .dino {
+    width: 50%;
   }
 }
 
 @media only screen and (min-width: 38em) {
+
+  .dino:nth-child(1) {
+    display: none;
+  }
+
+  .dino {
+    width: 33.33%;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
+
+  .dino:nth-child(1) {
+    display: block;
+  }
+
+  .dino {
+    width: 25%;
+  }
+
 }
